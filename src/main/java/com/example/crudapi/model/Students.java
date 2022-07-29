@@ -15,9 +15,9 @@ public class Students {
     @Id
     private String studentId;
     @NotBlank(message = "Names should not be blank")
-    @Size(min=5, max=20, message="First Name should have at least 5 characters and no more than 20")
+    @Size(min=4, max=25, message="First Name should have at least 4 characters and no more than 25")
     private String firstName;
-    @Size(min=5, max=20, message="Last Name should have at least 5 characters and no more than 20")
+    @Size(min=4, max=25, message="Last Name should have at least 4 characters and no more than 25")
     private String lastName;
     private String gender;
     private Address location;
